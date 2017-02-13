@@ -27,6 +27,11 @@ scripts/startDebug.sh
 
 Use the GNU Screen utility to start blazegraph in a persistent shell that can be detached and left to run while exiting from the VM.  (There may be other ways to run blazegraph as a daemon on VM startup - if you discover it, please note the solution in a new github issue.  It's likely something to do with installing Apache Tomcat or JBoss container servers and using a blazegraph WAR build.)
 
+## Loading RDF data
+
+Place RDF data into the `./rdf` directory.  It can be accessed from the VM on the `/vagrant/rdf` directory. See the blazegrph documentation on loading data at https://wiki.blazegraph.com/wiki/index.php/Bulk_Data_Load
+
+
 ## Environment
 
 * Ubuntu 16.04 64-bit machine
