@@ -4,3 +4,7 @@ downloads
 .DS_STORE
 *console.log
 
+# Ignore data in the ./rdf path
+rdf/*
+!rdf/.keep
+
