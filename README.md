@@ -12,25 +12,19 @@ This repository creates a Vagrant VM that bundles the [Blazegraph](https://www.b
 2. `cd blazegraph-vagrant`
 3. `vagrant up` (and be patient)
 
-Then login and start blazegraph:
+
+The [Blazegraph 2.1.4](https://github.com/blazegraph/database/tree/BLAZEGRAPH_RELEASE_2_1_4) should be running and available
+at [http://localhost:9999/bigdata/](http://localhost:9999/bigdata/)
+
+To login:
 
 ```
-$ vagrant ssh -- '/vagrant/downloads/BLAZEGRAPH_RELEASE_2_1_4/scripts/startBlazegraph.sh'
+$ vagrant ssh
 ```
-
-There are several scripts to start blazegraph, i.e.
-```
-scripts/startBigdata.sh
-scripts/startBlazegraph.sh
-scripts/startDebug.sh
-```
-
-Use the GNU Screen utility to start blazegraph in a persistent shell that can be detached and left to run while exiting from the VM.  (There may be other ways to run blazegraph as a daemon on VM startup - if you discover it, please note the solution in a new github issue.  It's likely something to do with installing Apache Tomcat or JBoss container servers and using a blazegraph WAR build.)
 
 ## Loading RDF data
 
 Place RDF data into the `./rdf` directory.  It can be accessed from the VM on the `/vagrant/rdf` directory. See the blazegrph documentation on loading data at https://wiki.blazegraph.com/wiki/index.php/Bulk_Data_Load
-
 
 ## Environment
 
