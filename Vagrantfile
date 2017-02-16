@@ -8,7 +8,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.hostname = "blazegraph"
 
   config.vm.provider "virtualbox" do |v|
-    v.memory = 2048
+    # Blazegraph debian package has a default memory requirement of 8G, see:
+    # https://github.com/blazegraph/database/blob/BLAZEGRAPH_RELEASE_2_1_4/blazegraph-deb/src/deb/conf/blazegraph#L19
+    v.memory = 8192
     v.name = "blazegraph"
   end
 
