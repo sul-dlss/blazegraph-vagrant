@@ -1,6 +1,8 @@
 # Blazegraph Vagrant
 This repository creates a Vagrant VM that bundles the [Blazegraph](https://www.blazegraph.com/) triplestore and related dependencies.
 
+See also https://github.com/blazegraph/database/tree/master/src/resources/deployment/vagrant/samples/VirtualBox
+
 ## Requirements
 
 * [Vagrant](https://www.vagrantup.com/)
